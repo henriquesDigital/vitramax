@@ -220,9 +220,6 @@ img {
   fill: #ffffff;
 }
 
-.header-phone .phone-short {
-  display: none;
-}
 
 .mobile-nav-cta {
   display: none;
@@ -1365,7 +1362,7 @@ section.sec-pad {
   .main-nav {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 100%;
     left: 0;
     right: 0;
     background: #ffffff;
@@ -1507,7 +1504,45 @@ section.sec-pad {
   }
 
   .topbar {
+    display: block;
+    background: #091e30;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .topbar .wrap {
+    min-height: 34px;
+    justify-content: center;
+    padding: 4px 12px;
+  }
+
+  .topbar-left {
     display: none;
+  }
+
+  .topbar-right {
+    gap: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .topbar-right > span {
+    display: none;
+  }
+
+  .topbar a {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+  }
+
+  .topbar svg {
+    width: 14px;
+    height: 14px;
+    fill: #38bdf8;
   }
 
   .header-inner {
@@ -1518,9 +1553,6 @@ section.sec-pad {
     height: 40px;
   }
 
-  .main-nav {
-    top: 68px;
-  }
 
   .hero {
     padding: 60px 0 50px;
@@ -2180,14 +2212,29 @@ section.sec-pad {
 }
 
 @media (max-width: 420px) {
-  .header-phone .phone-full {
-    display: none;
+  .header-inner {
+    height: 64px;
+    padding: 0 4px;
   }
-  .header-phone .phone-short {
-    display: inline;
+  .brand img {
+    height: 34px;
+    max-width: 110px;
+  }
+  .header-actions {
+    gap: 6px;
   }
   .header-phone {
-    padding: 6px 10px;
+    padding: 6px 9px;
     font-size: 12px;
+    gap: 5px;
+  }
+  .header-phone svg {
+    width: 13px;
+    height: 13px;
+  }
+  .menu-toggle {
+    width: 36px;
+    height: 36px;
+    font-size: 19px;
   }
 }
