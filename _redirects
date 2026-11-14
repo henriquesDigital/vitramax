@@ -1,0 +1,15 @@
+# Cloudflare Pages Redirects
+/index.html / 301
+/areas-atendidas-litoral-catarinense.html /areas-atendidas-litoral-catarinense 301
+/avaliacoes-google.html /avaliacoes-google 301
+/blog-envidracamento-sacadas-litoral-catarinense.html /blog-envidracamento-sacadas-litoral-catarinense 301
+/envidracamento-de-sacadas.html /envidracamento-de-sacadas 301
+/envidracamento-sacadas-balneario-camboriu.html /envidracamento-sacadas-balneario-camboriu 301
+/envidracamento-sacadas-itajai.html /envidracamento-sacadas-itajai 301
+/envidracamento-sacadas-itapema.html /envidracamento-sacadas-itapema 301
+/manutencao-de-envidracamento.html /manutencao-de-envidracamento 301
+/politica-de-privacidade.html /politica-de-privacidade 301
+/portas-divisorias.html /portas-divisorias 301
+/projetos-de-envidracamento.html /projetos-de-envidracamento 301
+/sobre-a-vitra-max.html /sobre-a-vitra-max 301
+/termos-de-uso.html /termos-de-uso 301
