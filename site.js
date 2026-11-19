@@ -128,7 +128,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var encoded = encodeURIComponent(text);
       var waUrl = 'https://wa.me/5547989081777?text=' + encoded;
-      window.open(waUrl, '_blank');
+
+      // Disparo de evento no dataLayer para registro analítico
+      if (window.dataLayer) {
+        window.dataLayer.push({
+          event: 'simulador_whatsapp',
+          service: service,
+          property: propType,
+          city: city
+        });
+      }
+
+      // Dispara clique via elemento <a> para acionar nativamente as tags do GTM configuradas para links wa.me
+      var tempLink = document.createElement('a');
+      tempLink.href = waUrl;
+      tempLink.target = '_blank';
+      tempLink.rel = 'noopener';
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
     });
   }
 });
