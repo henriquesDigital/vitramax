@@ -1562,6 +1562,17 @@ section.sec-pad {
     font-size: 34px;
   }
 
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 380px;
+    justify-content: center;
+    text-align: center;
+  }
+
   .hero-trust-bar {
     grid-template-columns: 1fr 1fr;
     gap: 14px;
