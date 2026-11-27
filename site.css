@@ -1354,8 +1354,7 @@ section.sec-pad {
 
 /* === RESPONSIVIDADE MOBILE (< 992px e < 680px) === */
 @media (max-width: 992px) {
-  .topbar-left span:nth-child(2),
-  .topbar-right span:first-child {
+  .topbar {
     display: none;
   }
 
@@ -1504,45 +1503,7 @@ section.sec-pad {
   }
 
   .topbar {
-    display: block;
-    background: #091e30;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .topbar .wrap {
-    min-height: 34px;
-    justify-content: center;
-    padding: 4px 12px;
-  }
-
-  .topbar-left {
     display: none;
-  }
-
-  .topbar-right {
-    gap: 0;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .topbar-right > span {
-    display: none;
-  }
-
-  .topbar a {
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 700;
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    text-decoration: none;
-  }
-
-  .topbar svg {
-    width: 14px;
-    height: 14px;
-    fill: #38bdf8;
   }
 
   .header-inner {
